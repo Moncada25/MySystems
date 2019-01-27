@@ -1,0 +1,62 @@
+form {
+    /* Temp */
+    width: auto;
+    margin: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    /* End Temp */
+}
+
+form .form-row {
+    position: relative;
+}
+
+form .form-row:last-child {
+    margin-bottom: 0;
+}
+
+form .form-row input[type="text"] {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+    float:none;
+    color: whitesmoke;
+    font-family:"Times New Roman";
+    background-color: transparent;
+    border: 2px solid #1cb495;
+    border-top: none;
+    border-radius: 10px;
+    outline: 0;
+}
+
+form .form-row input[type="text"] + label[data-placeholder] {
+    pointer-events: none;
+}
+
+form .form-row input[type="text"] + label[data-placeholder]:after {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    color: #1cb495;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+    font-family:"Times New Roman";
+    background-color: transparent;
+}
+
+form .form-row input[type="text"]:focus, form .form-row input[type="text"]:valid {
+    border: 2px solid #1cb495;
+    border-top: none;
+}
+
+form .form-row input[type="text"]:focus + label[data-placeholder]:after, form .form-row input[type="text"]:valid + label[data-placeholder]:after {
+    -webkit-transform: translate(0%, -170%) scale(0.9, 0.9);
+            transform: translate(0%, -170%) scale(0.9, 0.9);
+    color: #1cb495;
+    background-color: transparent;
+}
