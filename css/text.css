@@ -20,9 +20,9 @@ form .form-row input[type="text"] {
     padding: 10px;
     margin: 5px auto;
     text-align: center;
-    float:none;
+    float: none;
     color: whitesmoke;
-    font-family:"Times New Roman";
+    font-family: "Times New Roman";
     background-color: transparent;
     border: 2px solid #1cb495;
     border-top: none;
@@ -30,11 +30,11 @@ form .form-row input[type="text"] {
     outline: 0;
 }
 
-form .form-row input[type="text"] + label[data-placeholder] {
+form .form-row input[type="text"]+label[data-placeholder] {
     pointer-events: none;
 }
 
-form .form-row input[type="text"] + label[data-placeholder]:after {
+form .form-row input[type="text"]+label[data-placeholder]:after {
     content: attr(data-placeholder);
     position: absolute;
     top: 50%;
@@ -45,18 +45,20 @@ form .form-row input[type="text"] + label[data-placeholder]:after {
     transform: translate(0%, -50%);
     transition: all 0.2s ease-in-out;
     font-size: 20px;
-    font-family:"Times New Roman";
+    font-family: "Times New Roman";
     background-color: transparent;
 }
 
-form .form-row input[type="text"]:focus, form .form-row input[type="text"]:valid {
+form .form-row input[type="text"]:focus,
+form .form-row input[type="text"]:valid {
     border: 2px solid #1cb495;
     border-top: none;
 }
 
-form .form-row input[type="text"]:focus + label[data-placeholder]:after, form .form-row input[type="text"]:valid + label[data-placeholder]:after {
+form .form-row input[type="text"]:focus+label[data-placeholder]:after,
+form .form-row input[type="text"]:valid+label[data-placeholder]:after {
     -webkit-transform: translate(0%, -170%) scale(0.9, 0.9);
-            transform: translate(0%, -170%) scale(0.9, 0.9);
+    transform: translate(0%, -170%) scale(0.9, 0.9);
     color: #1cb495;
     background-color: transparent;
 }

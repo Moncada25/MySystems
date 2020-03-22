@@ -1,19 +1,17 @@
 </div>
 
 <style>
-
-    .footer { 
+    .footer {
         width: 100%;
         height: auto;
         text-align: center;
         font-family: Times New Roman;
         font-size: 25px;
     }
-
 </style>
 
 <br>
-<footer class="footer">
+<footer class="footer efecto-derecha">
     <div class="container">
         <p class="text-muted">Copyright © 2019 My Systems</p>
     </div>
@@ -21,4 +19,5 @@
 <br>
 
 </body>
-</html>
+
+</html> 

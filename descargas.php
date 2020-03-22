@@ -6,10 +6,10 @@ include 'carrito.php';
 
 <?php 
 
-if($_POST){
+if ($_POST) {
 
-    $IDVENTA = openssl_decrypt($_POST['IDVENTA'],COD,KEY);
-    $IDPRODUCTO = openssl_decrypt($_POST['IDPRODUCTO'],COD,KEY);
+    $IDVENTA = openssl_decrypt($_POST['IDVENTA'], COD, KEY);
+    $IDPRODUCTO = openssl_decrypt($_POST['IDPRODUCTO'], COD, KEY);
 
     $sentencia = $pdo->prepare("SELECT * FROM tbldetalleventa 
     WHERE IDVENTA = :IDVENTA 
@@ -22,10 +22,10 @@ if($_POST){
 
     $listaProductos = $sentencia->fetchAll(PDO::FETCH_ASSOC);
 
-    if($sentencia->rowCount() > 0){
+    if ($sentencia->rowCount() > 0) {
 
-        $nombreArchivo = "archivos/".$listaProductos[0]['IDPRODUCTO'].".rar";
-        $nuevoNombre = openssl_decrypt($_POST['Nombre'],COD,KEY).".rar";
+        $nombreArchivo = "files/app/" . $listaProductos[0]['IDPRODUCTO'] . ".rar";
+        $nuevoNombre = $listaProductos[0]['IDPRODUCTO'] . ".rar";
 
         header("Content-Transfer-Encoding: binary");
         header("Content-type: application/force-download");
@@ -39,8 +39,7 @@ if($_POST){
         $sentencia->bindParam(':IDVENTA', $IDVENTA);
         $sentencia->bindParam(':IDPRODUCTO', $IDPRODUCTO);
         $sentencia->execute();
-
-    }else{
+    } else {
         include 'templates/cabecera.php';
 
         echo "<h2 style='font-family: Times New Roman; color: #1cb495; font-size: 30px; text-align: center;'>Descargas agotadas</h2>";
@@ -48,4 +47,4 @@ if($_POST){
         include 'templates/pie.php';
     }
 }
-?>
+?> 

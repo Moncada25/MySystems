@@ -1,37 +1,36 @@
 <style>
-
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 480px) {
 
         @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-            .col-sm-auto { 
+            .col-sm-auto {
                 width: auto;
             }
         }
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
 
         @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-            .col-sm-auto { 
+            .col-sm-auto {
                 width: auto;
             }
         }
     }
 
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 960px) {
 
         @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-            .col-sm-auto { 
+            .col-sm-auto {
                 width: 250px;
                 height: 450px;
             }
         }
     }
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1280px) {
 
         @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-            .col-sm-auto { 
+            .col-sm-auto {
                 width: auto;
             }
         }
@@ -51,5 +50,4 @@
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     @media only screen and (max-width: 479px) {}
-
-</style>
+</style> 

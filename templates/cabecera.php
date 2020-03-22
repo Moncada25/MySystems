@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="shortcut icon" href="http://subirimagen.me/uploads/20181224100052.png">
+    <link rel="shortcut icon" href="images/icon/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,64 +13,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/transiciones.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/radio.css">
 </head>
 
 <style>
-        html, body {
-            background:url("http://subirimagen.me/uploads/20181203110229.jpg");
-        }
- </style>
+    html,
+    body {
+        background: url("images/background/bg41.jpg");
+    }
+</style>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="font-family: Times New Roman; font-size: 20px;">
         <a class="navbar-brand" href="index.php">
-        <img class="img-fluid" src="http://subirimagen.me/uploads/20181224100052.png">
-        Home
+            <img class="img-fluid" src="images/icon/logo.png">
+            Home
         </a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="my-nav" class="collapse navbar-collapse" style="font-family: Times New Roman; font-size: 20px;">
-            <ul class="navbar-nav mr-auto"> 
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="mostrarCarrito.php">
-                    <img class="img-fluid" src="http://subirimagen.me/uploads/20181202215236.png">
-                    Carrito(<?php echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
-                    ?>)
+                        <img class="img-fluid" src="images/icon/carrito.png">
+                        Carrito(<?php echo (empty($_SESSION['CARRITO'])) ? 0 : count($_SESSION['CARRITO']);
+                                ?>)
                     </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="ruleta.php">
-                    <img class="img-fluid" src="http://subirimagen.me/uploads/20181202215122.png">
-                    Play Free
+                        <img class="img-fluid" src="images/icon/ruleta.png">
+                        Winwheel
                     </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="science.php">
-                    <img class="img-fluid" src="http://subirimagen.me/uploads/20181203004055.png">
-                    Science
+                        <img class="img-fluid" src="images/icon/science.png">
+                        Science
                     </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="programming.php">
-                    <img class="img-fluid" src="http://subirimagen.me/uploads/20181203004318.png">
-                    Programming
+                        <img class="img-fluid" src="images/icon/programming.png">
+                        Programming
                     </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="services.php">
-                    <img class="img-fluid" src="http://subirimagen.me/uploads/20190106203032.png">
-                    Services
+                        <img class="img-fluid" src="images/icon/services.png">
+                        Services
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <div class="container-fluid">
+    <div class="container-fluid"> 

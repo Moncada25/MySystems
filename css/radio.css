@@ -15,8 +15,8 @@
     display: none;
 }
 
-.funkyradio input[type="radio"]:empty ~ label,
-.funkyradio input[type="checkbox"]:empty ~ label {
+.funkyradio input[type="radio"]:empty~label,
+.funkyradio input[type="checkbox"]:empty~label {
     position: relative;
     line-height: 2.5em;
     text-indent: 3.25em;
@@ -27,8 +27,8 @@
     user-select: none;
 }
 
-.funkyradio input[type="radio"]:empty ~ label:before,
-.funkyradio input[type="checkbox"]:empty ~ label:before {
+.funkyradio input[type="radio"]:empty~label:before,
+.funkyradio input[type="checkbox"]:empty~label:before {
     position: absolute;
     display: block;
     top: 0;
@@ -40,38 +40,38 @@
     border-radius: 3px 0 0 3px;
 }
 
-.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
-.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+.funkyradio input[type="radio"]:hover:not(:checked)~label,
+.funkyradio input[type="checkbox"]:hover:not(:checked)~label {
     color: #1cb495;
 }
 
-.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
-.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+.funkyradio input[type="radio"]:hover:not(:checked)~label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked)~label:before {
     content: '\2714';
     text-indent: .9em;
     color: whitesmoke;
 }
 
-.funkyradio input[type="radio"]:checked ~ label,
-.funkyradio input[type="checkbox"]:checked ~ label {
+.funkyradio input[type="radio"]:checked~label,
+.funkyradio input[type="checkbox"]:checked~label {
     color: #1cb495;
 }
 
-.funkyradio input[type="radio"]:checked ~ label:before,
-.funkyradio input[type="checkbox"]:checked ~ label:before {
+.funkyradio input[type="radio"]:checked~label:before,
+.funkyradio input[type="checkbox"]:checked~label:before {
     content: '\2714';
     text-indent: .9em;
     color: #1cb495;
     background-color: #1cb495;
 }
 
-.funkyradio input[type="radio"]:focus ~ label:before,
-.funkyradio input[type="checkbox"]:focus ~ label:before {
+.funkyradio input[type="radio"]:focus~label:before,
+.funkyradio input[type="checkbox"]:focus~label:before {
     box-shadow: 0 0 0 3px #1cb495;
 }
 
-.funkyradio-color input[type="radio"]:checked ~ label:before,
-.funkyradio-color input[type="checkbox"]:checked ~ label:before {
+.funkyradio-color input[type="radio"]:checked~label:before,
+.funkyradio-color input[type="checkbox"]:checked~label:before {
     color: #1cb495;
     background-color: #1cb495;
 }
